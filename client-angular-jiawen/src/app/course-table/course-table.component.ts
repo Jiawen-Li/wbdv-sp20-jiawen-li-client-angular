@@ -25,5 +25,4 @@ export class CourseTableComponent implements OnInit {
     this.service.findAllCourses()
       .then(courses => this.courses = courses);
   }
-
 }

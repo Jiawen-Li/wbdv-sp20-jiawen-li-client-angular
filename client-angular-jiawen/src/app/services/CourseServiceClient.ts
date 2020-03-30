@@ -11,10 +11,10 @@ export class CourseServiceClient {
       .then(response => response.json())
 
   findModulesForCourse = (courseId) =>
-    fetch('ttp://wbdv-generic-server.herokuapp.com/api/001059598/courses/${courseId}/modules')
+    fetch('http://wbdv-generic-server.herokuapp.com/api/001059598/courses/${courseId}/modules')
       .then(response => response.json())
 
   findLessonsForModule = (moduleId) =>
-    fetch('ttp://wbdv-generic-server.herokuapp.com/api/001059598/modules/${moduleId}/lessons')
+    fetch('http://wbdv-generic-server.herokuapp.com/api/001059598/modules/${moduleId}/lessons')
       .then(response => response.json())
 }

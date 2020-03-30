@@ -3,8 +3,9 @@
     Courses Now Registered
   </li>
   <li class="list-group-item"
+      [class]="{'active': courseId === course._id}"
       *ngFor="let course of courses">
-    <a routerLink="/details/{{courseId}}}/modules">
+    <a routerLink="/courses/{{course._id}}}/modules">
       {{course.title}}
     </a>
   </li>
