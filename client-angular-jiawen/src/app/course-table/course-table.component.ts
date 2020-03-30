@@ -22,6 +22,9 @@ export class CourseTableComponent implements OnInit {
   //   this.courses.push({_id: '321', title})
 
   ngOnInit(): void {
+    this.route.params.subscribe( params => {
+      this.courseId = params.courseId;
+    });
     this.service.findAllCourses()
       .then(courses => this.courses = courses);
   }
