@@ -7,7 +7,7 @@ import {CourseViewerComponent} from "./course-viewer/course-viewer.component";
 const routes: Routes = [
   {path: '', component: CourseTableComponent},
   {path: 'courses', component: CourseTableComponent},
-  {path: 'courses/:courseId', component: CourseViewerComponent},
+  {path: 'courses/:courseId/modules', component: CourseViewerComponent},
   {path: 'courses/:courseId/modules/:moduleId', component: CourseViewerComponent},
   {path: 'courses/:courseId/modules/:moduleId/lessons/:lessonId', component: CourseViewerComponent}
 ];
