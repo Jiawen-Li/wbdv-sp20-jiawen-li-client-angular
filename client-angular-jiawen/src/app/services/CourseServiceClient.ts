@@ -7,6 +7,6 @@ export class CourseServiceClient {
       .then(response => response.json());
 
   findCourseById = (courseId) =>
-    fetch(`http://wbdv-generic-server.herokuapp.com/api/001059598/courses/${courseId}`)
+    fetch(`https://wbdv-generic-server.herokuapp.com/api/001059598/courses/${courseId}`)
       .then(response => response.json())
 }

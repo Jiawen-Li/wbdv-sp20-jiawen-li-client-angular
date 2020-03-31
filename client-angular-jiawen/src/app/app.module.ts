@@ -8,6 +8,8 @@ import { CourseViewerComponent } from './course-viewer/course-viewer.component';
 import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
 import { ModuleListComponent } from './module-list/module-list.component';
 import {CourseServiceClient} from "./services/CourseServiceClient";
+import {ModuleServiceClient} from "./services/ModuleServiceClient";
+import {LessonServiceClient} from "./services/LessonServiceClient";
 
 @NgModule({
   declarations: [
@@ -21,7 +23,7 @@ import {CourseServiceClient} from "./services/CourseServiceClient";
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [CourseServiceClient],
+  providers: [CourseServiceClient, ModuleServiceClient,LessonServiceClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
