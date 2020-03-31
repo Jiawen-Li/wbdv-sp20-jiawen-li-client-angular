@@ -9,6 +9,7 @@ const routes: Routes = [
   {path: 'courses', component: CourseTableComponent},
   {path: 'courses/:courseId/modules', component: CourseViewerComponent},
   {path: 'courses/:courseId/modules/:moduleId', component: CourseViewerComponent},
+  {path: 'courses/:courseId/modules/:moduleId/lessons', component: CourseViewerComponent},
   {path: 'courses/:courseId/modules/:moduleId/lessons/:lessonId', component: CourseViewerComponent}
 ];
 

@@ -2,9 +2,9 @@
 
 <ul class="list-group">
   <li class="list-group-item"
-      [class]="{'active': moduleId === module._id}"
-      *ngFor="let module of modules">
-    <a routerLink="/courses/{{courseId}}/modules/{{module._id}}/lessons/">
+      *ngFor="let module of modules"
+      [class]="{'active': moduleId === module._id}">
+    <a routerLink="/courses/{{courseId}}/modules/{{module._id}}/lessons">
       {{module.title}}
     </a>
   </li>

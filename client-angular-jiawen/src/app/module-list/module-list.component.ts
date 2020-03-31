@@ -20,9 +20,8 @@ export class ModuleListComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.courseId = params.courseId;
       this.moduleId = params.moduleId;
+      this.service.findModulesForCourse(this.courseId)
+        .then(modules => this.modules = modules)
     });
-    this.service.findModulesForCourse(this.courseId)
-      .then(modules => this.modules = modules)
   }
-
 }
